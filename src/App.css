@@ -1,0 +1,14 @@
+.homePage {
+  height: 55vh;
+}
+.text {
+  text-align: center;
+  margin-top: 100px;
+}
+image {
+  display: block;
+}
+image img {
+  width: 400px;
+  height: 300px;
+}

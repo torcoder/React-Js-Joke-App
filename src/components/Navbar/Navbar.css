@@ -1,0 +1,25 @@
+.navbar {
+  display: block;
+}
+
+.navbar_heading {
+  text-align: center;
+  margin-bottom: 3vh;
+  font-size: 28px;
+  font-weight: bold;
+  color: #191b2c;
+}
+
+.navbar_links ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul a {
+  color: #8599a8;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 8px 30px;
+  border: 1px solid #8599a8;
+  border-radius: 5px;
+}
