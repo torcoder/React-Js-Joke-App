@@ -1,5 +1,4 @@
 import React, { useEffect, useCallback, useState } from 'react';
-// import { getRandomJokeByCategoryType } from '../Context/services';
 import './Categories.css';
 import { useParams, useHistory, useLocation } from 'react-router-dom';
 import axios from 'axios';
@@ -24,8 +23,6 @@ const Categories = () => {
       });
   }, []);
 
-  // console.log(catName, 'catName');
-
   useEffect(() => {
     fetchRandomCategories(catName);
     fetchRandomCategories(catName);
@@ -41,13 +38,7 @@ const Categories = () => {
     // eslint-disable-next-line
   }, [fetchRandomCategories, setCategories, catName, location.key]);
 
-  // useEffect(() => {
-  //   const json = JSON.stringify(categories);
-  //   localStorage.setItem('categories', json);
-  // }, [fetchRandomCategories, categories]);
-
   const localCategories = JSON.parse(localStorage.getItem('categories'));
-  // console.log(localCategories);
 
   return (
     <div className='container'>
